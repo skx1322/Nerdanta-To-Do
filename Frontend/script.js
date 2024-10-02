@@ -450,41 +450,6 @@ $(document).ready(function() {
     });
 });
 
-//data save function
-
-
-
-// $(document).ready(function () {
-//     // When the profile picture container is clicked, trigger the file input
-//     $('.profile-picture-container').click(function () {
-//         $('#upload-profile-picture').click();
-//     });
-
-//     // When a new image is selected
-//     $('#upload-profile-picture').change(function (event) {
-//         var formData = new FormData();
-//         var file = event.target.files[0];
-
-//         // Append the selected file to the FormData object
-//         formData.append('profilePicture', file);
-
-//         // Send the file to the backend via AJAX
-//         $.ajax({
-//             url: '/upload-profile-picture', // Server-side route to handle upload
-//             type: 'POST',
-//             data: formData,
-//             contentType: false,
-//             processData: false,
-//             success: function (response) {
-//                 // Update all profile picture elements to the new image path
-//                 $('.profile-picture').attr('src', response.filePath);
-//             },
-//             error: function (err) {
-//                 alert('Error uploading file');
-//             }
-//         });
-//     });
-// });
 
 
 // Function need include:
