@@ -102,8 +102,7 @@ $(document).ready(function() {
 
 
 //clock function
-var timezoneOffset = 8; // Default GMT+8
-
+var timezoneOffset = 8; 
 function updateClock() {
     var now = new Date();
     var utc = now.getTime() + (now.getTimezoneOffset() * 60000);
@@ -439,7 +438,7 @@ $(document).ready(function() {
             title = "Ms.";
         }
 
-        // Update the greeting
+        // update the greeting
         if (fullName && nickName) {
             $('#greeting').html("Welcome back, <b class='user-name'>" + title + " " + fullName + " a.k.a " + nickName +"</b>");
             $(`.profile-name`).html(title + " " + fullName);
